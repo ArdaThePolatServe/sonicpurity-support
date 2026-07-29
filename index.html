@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Sonic Purity</title>
+<meta name="description" content="Help and answers for Sonic Purity, the speaker cleaning and sound toolkit app.">
+<meta name="color-scheme" content="light dark">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --surface: #f5f7fa;
+  --text: #16191d;
+  --muted: #5c6570;
+  --rule: #dfe3e8;
+  --accent: #0a63c9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1013;
+    --surface: #171a1f;
+    --text: #eef1f4;
+    --muted: #a3acb7;
+    --rule: #2a2f36;
+    --accent: #5cb4ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0 1.25rem 5rem;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 42rem; margin: 0 auto; }
+header {
+  display: flex; align-items: center; gap: .75rem;
+  padding: 2.25rem 0 1.5rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2rem;
+}
+header .mark {
+  width: 34px; height: 34px; border-radius: 9px; flex: none;
+  background: linear-gradient(135deg, #0a84ff, #64d2ff);
+}
+header .name { font-weight: 600; letter-spacing: -.01em; }
+h1 { font-size: 1.9rem; line-height: 1.2; letter-spacing: -.02em; margin: 0 0 .35rem; }
+h2 { font-size: 1.3rem; letter-spacing: -.01em; margin: 2.5rem 0 .6rem; }
+h3 { font-size: 1.05rem; margin: 1.9rem 0 .4rem; }
+p, li { color: var(--text); }
+p { margin: 0 0 1rem; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.35rem; }
+li { margin-bottom: .45rem; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+code {
+  font: .9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: var(--surface); padding: .12em .38em; border-radius: 4px;
+}
+.updated { color: var(--muted); font-size: .95rem; margin: 0 0 2rem; }
+footer {
+  margin-top: 4rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: .92rem;
+}
+footer a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<main>
+<header><span class="mark"></span><span class="name">Sonic Purity</span></header>
+<h1>Sonic Purity — Support</h1>
+<p><strong><a href="mailto:ardapolat0901@gmail.com">ardapolat0901@gmail.com</a></strong></p>
+<hr>
+<h2>Before anything else: if your phone got wet</h2>
+<p>Sonic Purity moves air. It is not a repair tool, it cannot undo liquid damage, and it will not waterproof anything.</p>
+<p>If your phone was submerged, is behaving oddly, is not charging, or shows a liquid warning, stop and contact Apple Support or an authorised repair provider. Running a cleaning cycle is not a substitute for that, and neither is rice.</p>
+<hr>
+<h2>Common questions</h2>
+<h3>The cycle ran but my speaker still sounds muffled</h3>
+<p>Try, in order:</p>
+<ol>
+<li><strong>Turn the volume up.</strong> The diaphragm has to swing hard to move a droplet. The app counts your volume in hardware steps and warns you below 14 of 16.</li>
+<li><strong>Take the case off</strong> and hold the phone with the speaker pointing at the floor, over a towel. Gravity does a meaningful share of the work.</li>
+<li><strong>Run it more than once.</strong> Two or three cycles is normal.</li>
+<li><strong>Use Water Eject rather than Quick Clean.</strong> Quick Clean is a ten-second pass; Water Eject is thirty seconds of the same pulse and does more of the work.</li>
+<li><strong>Try Deep Clean or Pulse Mode</strong> if a short cycle has not helped.</li>
+</ol>
+<p>If several cycles change nothing, the problem is probably not water sitting in the grille, and no amount of sound will move it. That is the point to talk to Apple Support.</p>
+<h3>Why will it not run with my headphones connected?</h3>
+<p>Because 165 Hz near full scale, in an ear canal, is a genuine hearing risk. Cleaning modes refuse to start on a headphone or Bluetooth route and stop immediately if you connect something mid-cycle. This is deliberate and not configurable.</p>
+<h3>Why does the tone below 20 Hz not exist?</h3>
+<p>It never did. Earlier marketing copy mentioned frequencies below 20 Hz; that was incorrect and has been removed. A phone speaker produces essentially nothing down there, so the tone generator covers 20 Hz to 20 kHz, which is the range the hardware can actually reproduce. Pro adds 0.1 Hz resolution within that range.</p>
+<h3>Is the dB meter accurate?</h3>
+<p>It is calibrated well enough to compare rooms and spot when something is loud enough to matter. It is not a certified sound level meter, phone microphones vary between models, and it should not be used for occupational or legal noise measurement. Settings → Calibrate lets you offset it against a reference if you have one.</p>
+<h3>What does Pro unlock?</h3>
+<p>Smart Clean's microphone-tuned cycle, the four advanced cleaning modes, all six speaker diagnostics with their health score and history, the square / triangle / sawtooth waveforms, 0.1 Hz frequency resolution, and export of your cleaning and diagnostic history.</p>
+<p>The core water-eject cycle, Quick Clean, the dB meter, the noise generators, the sine tone generator, the sleep timers, and the 7-day routine tracker are free and always will be.</p>
+<h3>How do I manage or cancel a subscription?</h3>
+<p>Settings → Manage Subscription in the app, or iOS Settings → your name → Subscriptions. Cancellation is handled by Apple; we cannot do it for you and never see your account.</p>
+<h3>I bought Pro and it is not showing</h3>
+<p>Settings → Restore Purchases. If that does not work, make sure you are signed in with the Apple Account you bought it on. Purchases are tied to that account, not to the device.</p>
+<h3>Refunds</h3>
+<p>Refunds are handled by Apple, not by us: <strong><a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a></strong></p>
+<h3>Do you collect any data?</h3>
+<p>No. No account, no analytics, no network requests. Microphone audio is measured and discarded and never leaves your device. See the <a href="https://ardathepolatserve.github.io/sonicpurity-privacy/">Privacy Policy</a>.</p>
+<hr>
+<h2>Reporting a problem</h2>
+<p>Email <strong><a href="mailto:ardapolat0901@gmail.com">ardapolat0901@gmail.com</a></strong> with:</p>
+<ul>
+<li>Your iPhone model and iOS version</li>
+<li>What you did and what happened</li>
+<li>The app version, from Settings, at the bottom</li>
+</ul>
+<p>Please do not send audio recordings; we have no way to use them and would rather not receive them.</p>
+<footer>
+<a href="https://ardathepolatserve.github.io/sonicpurity-privacy/">Privacy Policy</a>
+<span>&copy; Sonic Purity</span>
+</footer>
+</main>
+</body>
+</html>
