@@ -6,6 +6,8 @@
 <title>Support — Sonic Purity</title>
 <meta name="description" content="Help and answers for Sonic Purity, the speaker cleaning and sound toolkit app.">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" href="icon.png" type="image/png">
+<link rel="apple-touch-icon" href="icon.png">
 <style>
 :root {
   color-scheme: light dark;
@@ -43,8 +45,11 @@ header {
   margin-bottom: 2rem;
 }
 header .mark {
-  width: 34px; height: 34px; border-radius: 9px; flex: none;
-  background: linear-gradient(135deg, #0a84ff, #64d2ff);
+  width: 40px; height: 40px; flex: none;
+  /* Roughly iOS's corner radius at this size, so it reads as the app's icon. */
+  border-radius: 22%;
+  /* The icon is dark-on-dark; on a light page it needs an edge or it floats. */
+  box-shadow: 0 0 0 1px var(--rule);
 }
 header .name { font-weight: 600; letter-spacing: -.01em; }
 h1 { font-size: 1.9rem; line-height: 1.2; letter-spacing: -.02em; margin: 0 0 .35rem; }
@@ -71,7 +76,10 @@ footer a { margin-right: 1rem; }
 </head>
 <body>
 <main>
-<header><span class="mark"></span><span class="name">Sonic Purity</span></header>
+<header>
+<img class="mark" src="icon.png" width="40" height="40" alt="Sonic Purity app icon">
+<span class="name">Sonic Purity</span>
+</header>
 <h1>Sonic Purity — Support</h1>
 <p><strong><a href="mailto:ardapolat0901@gmail.com">ardapolat0901@gmail.com</a></strong></p>
 <hr>
